@@ -1,0 +1,10 @@
+{
+  "name": "inkwise_ai_server",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}
