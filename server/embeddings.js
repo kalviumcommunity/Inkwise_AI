@@ -29,7 +29,9 @@ export function dotProductSimilarity(a, b) {
 }
 
 // Vector database (in-memory)
+// Added comment for PR visibility
 export class VectorDB {
+  // This class implements a simple in-memory vector database
   constructor() {
     this.vectors = [];
     this.texts = [];
