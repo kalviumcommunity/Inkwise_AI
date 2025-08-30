@@ -6,7 +6,9 @@ export function zeroShotPrompt(query) {
   return `Answer the following question:\n${query}`;
 }
 
+// One-shot prompting utility for LLMs
 export function oneShotPrompt(query, example) {
+  // This function generates a one-shot prompt for the LLM
   return `Example:\nQ: ${example.q}\nA: ${example.a}\n\nNow answer:\nQ: ${query}\nA:`;
 }
 
