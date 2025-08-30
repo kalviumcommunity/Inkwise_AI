@@ -19,7 +19,9 @@ export function multiShotPrompt(query, examples) {
   return `${shots}\n\nNow answer:\nQ: ${query}\nA:`;
 }
 
+// Dynamic prompting utility for LLMs (added comment for PR visibility)
 export function dynamicPrompt(query, context) {
+  // This function generates a dynamic prompt for the LLM
   return `Context: ${context}\n\nQuestion: ${query}`;
 }
 
