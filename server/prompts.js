@@ -25,6 +25,8 @@ export function dynamicPrompt(query, context) {
   return `Context: ${context}\n\nQuestion: ${query}`;
 }
 
+// Chain-of-thought prompting utility for LLMs (added comment for PR visibility)
 export function chainOfThoughtPrompt(query) {
+  // This function generates a chain-of-thought prompt for the LLM
   return `Let's think step by step to answer:\n${query}`;
 }
