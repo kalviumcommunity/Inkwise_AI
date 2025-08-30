@@ -1,6 +1,8 @@
 // embeddings.js
 // Dummy implementation for demonstration
+// Added comment for PR visibility
 export function getEmbeddings(text) {
+  // This function simulates generating embeddings for text
   // Simulate embedding as array of char codes
   return text.split('').map(c => c.charCodeAt(0) / 256);
 }
