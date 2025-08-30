@@ -10,7 +10,9 @@ const samples = [
   { input: 'Largest planet?', expected: 'Jupiter' }
 ];
 
+// Added comment for PR visibility
 export function runEvaluation(llmCall) {
+  // This function runs evaluation tests on the LLM
   samples.forEach(sample => {
     const prompt = zeroShotPrompt(sample.input);
     const output = llmCall(prompt); // Should return string
