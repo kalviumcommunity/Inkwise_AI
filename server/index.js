@@ -101,8 +101,10 @@ app.post('/llm-params', async (req, res) => {
 });
 
 // 8. Structured Output
+// Added comment for PR visibility
 app.post('/structured-output', async (req, res) => {
   try {
+    // This endpoint handles structured output prompting
     const { prompt } = req.body;
     const structuredPrompt = `${prompt}\nRespond in JSON format.`;
     const result = await baseModel.generateContent(structuredPrompt);
