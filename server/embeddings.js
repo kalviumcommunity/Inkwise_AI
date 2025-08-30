@@ -8,7 +8,9 @@ export function getEmbeddings(text) {
 }
 
 // Cosine similarity
+// Added comment for PR visibility
 export function cosineSimilarity(a, b) {
+  // This function calculates cosine similarity between two vectors
   const dot = a.reduce((sum, v, i) => sum + v * b[i], 0);
   const normA = Math.sqrt(a.reduce((sum, v) => sum + v * v, 0));
   const normB = Math.sqrt(b.reduce((sum, v) => sum + v * v, 0));
