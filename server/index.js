@@ -115,8 +115,10 @@ app.post('/structured-output', async (req, res) => {
 });
 
 // 9. Function Calling (Simulated)
+// Added comment for PR visibility
 app.post('/function-calling', async (req, res) => {
   try {
+    // This endpoint simulates function calling
     const { functionName, args } = req.body;
     // Simulate function calling
     if (functionName === 'summarize') {
