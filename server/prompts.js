@@ -12,7 +12,9 @@ export function oneShotPrompt(query, example) {
   return `Example:\nQ: ${example.q}\nA: ${example.a}\n\nNow answer:\nQ: ${query}\nA:`;
 }
 
+// Multi-shot prompting utility for LLMs (added comment for PR visibility)
 export function multiShotPrompt(query, examples) {
+  // This function generates a multi-shot prompt for the LLM
   const shots = examples.map(ex => `Q: ${ex.q}\nA: ${ex.a}`).join('\n');
   return `${shots}\n\nNow answer:\nQ: ${query}\nA:`;
 }
