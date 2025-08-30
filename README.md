@@ -2,31 +2,36 @@
 
 **Inkwise AI** is an AI-powered resume builder that helps you create, edit, and optimize your resume using Google Gemini. Just describe your project or experience, and the AI will generate clean, structured LaTeX or Markdown code that can be previewed in real-time.
 
----
 
 ## 🚀 Features
 
-- ✨ Prompt-based resume section generation
-- 📄 Job description input to customize resumes (RAG)
-- 🧱 Structured outputs in LaTeX/Markdown
-- ⚙️ Function calling for auto-inserting sections, summarizing GitHub, and keyword matching
-- 💻 Real-time code editor with preview
 
----
 
-## 🧠 GenAI Concepts Used
+# Inkwise AI
 
-- **Prompting** – Create resume sections using plain text
-- **RAG** – Uses job descriptions or GitHub links to generate relevant content
-- **Structured Output** – AI returns consistent LaTeX/Markdown code
-- **Function Calling** – AI can trigger backend functions (e.g., insert, summarize)
+Inkwise AI is an intelligent document understanding platform powered by Google Gemini AI.
 
----
+## Features
 
-## 💡 Example Use
+- **Prompt Engineering**: Extracts relevant insights from raw text.
+- **RAG (Retrieval-Augmented Generation)**: Fetches contextual knowledge from stored documents.
+- **Structured Output**: Delivers results in JSON or tabular format.
+- **Function Calling**: Enables actions like summarization, keyword extraction, or Q&A.
 
-- Describe your project → Get resume-ready content
-- Paste a job description → Get tailored suggestions
+## How it Works
+
+Users upload documents and instantly get summaries, key insights, references, and answers to queries.
+
+## Implementation
+
+- Embeddings generation
+- Vector database integration
+- Similarity functions (Cosine, Euclidean, Dot Product)
+- Prompt engineering (zero, one, multi-shot, dynamic, chain-of-thought)
+- Evaluation pipeline
+- Token counting
+- LLM parameter control (temperature, top-p, top-k, stop sequence)
+- Structured output and function calling
 - Upload GitHub repo → Summarized automatically
 - Edit the code live and preview your resume instantly
 
