@@ -1,6 +1,8 @@
 // prompts.js
 
+// Zero-shot prompting utility for LLMs
 export function zeroShotPrompt(query) {
+  // This function generates a zero-shot prompt for the LLM
   return `Answer the following question:\n${query}`;
 }
 
